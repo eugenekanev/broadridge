@@ -10,8 +10,11 @@ VS 2019
 The current version has 2 parameters that must be specified in the appsettings.json file.
 
 {
+
   "maxparallelism": 4,  //the maximum count of files that might be processed in parallel
+  
   "txtprocessorwriterthreshold": 32768 // Back pressure and flow control for txt processor 
+  
 }
 
 ## Comments
