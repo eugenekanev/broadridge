@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fileparser.engine\fileparser.engine.csproj" />
+    <ProjectReference Include="..\WordFrequencyCaclculation\fileparser.wordfrequencycaclculation.csproj" />
+  </ItemGroup>
+
+</Project>
