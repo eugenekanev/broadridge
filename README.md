@@ -24,6 +24,7 @@ The current version has 2 parameters that must be specified in the appsettings.j
 The Source Control contains little files to process
 3. Net Core 3.0 is used just to try the new promising idea of using SPAN\Memory\Pipelines. I need more time to decrease the memory footprint using 
 this technology. I believe many improvements might be done.
+4. The solution only has one test project with one unit test inside. Real implementation would require extra test project per each project with code with many unit tests inside.
 
 
    
