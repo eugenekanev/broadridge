@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fileparser.wordfrequencycac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fileparser.utils", "fileparser.utils\fileparser.utils.csproj", "{EDC9F0A7-A334-464A-9A1D-3184E8D5C76F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fileparser.engine.txt.tests", "fileparser.engine.txt.tests\fileparser.engine.txt.tests.csproj", "{2E687A54-2574-4E41-93CF-C2FF85692164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EDC9F0A7-A334-464A-9A1D-3184E8D5C76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC9F0A7-A334-464A-9A1D-3184E8D5C76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC9F0A7-A334-464A-9A1D-3184E8D5C76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E687A54-2574-4E41-93CF-C2FF85692164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E687A54-2574-4E41-93CF-C2FF85692164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E687A54-2574-4E41-93CF-C2FF85692164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E687A54-2574-4E41-93CF-C2FF85692164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

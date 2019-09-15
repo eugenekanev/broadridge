@@ -96,7 +96,6 @@ namespace fileparser
 
             containerBuilder.RegisterType<TxtFileProcessor>()
                .WithParameter("writerThreshold", configuration.GetValue<int>(_txtprocessorwriterthreshold))
-               .SingleInstance()
                .Named<IFileProcessor>(".txt");
 
             containerBuilder.RegisterType<TxtFileProcessor>()

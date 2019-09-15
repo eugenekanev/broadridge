@@ -20,14 +20,20 @@ namespace fileparser.wordfrequencycaclculation
 
         public async Task FlushAsync()
         {
-            using (StreamWriter file =
-            new StreamWriter(_outputPath))
+            Dictionary<string, int> copy;
+            lock (_lock)
             {
-                foreach (var line in _result.OrderByDescending(pair => pair.Value))
-                {
-                      await file.WriteLineAsync($"{line.Key},{line.Value}");
-                }
+                copy = new Dictionary<string, int>(_result);
             }
+
+             using (StreamWriter file =
+                 new StreamWriter(_outputPath))
+                    {
+                        foreach (var line in copy.OrderByDescending(pair => pair.Value))
+                        {
+                            await file.WriteLineAsync($"{line.Key},{line.Value}");
+                        }
+                    }
         }
 
         public void MergeInfo(IDictionary<string, int> info)
